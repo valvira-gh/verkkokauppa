@@ -12,4 +12,11 @@
 
 .navList {
     list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navLink {
+    text-decoration: none;
+    font-size: 1.5rem;
 }

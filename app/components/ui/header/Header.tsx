@@ -6,7 +6,14 @@ const Navbar: React.FC = () => {
     <nav className={styles.navbar}>
       <ul className={styles.navList}>
         <li className={styles.navItem}>
-          <Link href="/">Home</Link>
+          <Link className={styles.navLink} href="/">
+            Home
+          </Link>
+        </li>
+        <li className={styles.navItem}>
+          <Link className={styles.navLink} href="/products">
+            Products
+          </Link>
         </li>
       </ul>
     </nav>
