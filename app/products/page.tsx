@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import Image from "next/image";
+import StarRating from "../components/ui/star-rating/StarRating";
 
 async function getData() {
   const result = await fetch("https://fakestoreapi.com/products", {
@@ -39,7 +40,7 @@ const Products: React.FC = async () => {
               height={180}
             />
             <div className={styles.ratingContainer}>
-              <p>{product.rating.rate}</p>
+              <StarRating rate={product.rating.rate} />
               <p>{product.rating.count}</p>
             </div>
             <h5 className={styles.productTitle}>{product.title}</h5>
