@@ -1,0 +1,39 @@
+.container {
+    width: 100svw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gridContainer {
+    border: 2px solid white;
+    width: 80%;
+    display: grid;
+    grid: auto-flow / repeat(auto-fill, minmax(15em, 1fr));
+}
+
+.productCard {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2em;
+    margin: 1em;
+    max-width: 15em;
+}
+
+.ratingContainer {
+    display: flex;
+    border: 1px solid rgb(218, 0, 0);
+    width: 100%;
+    justify-content: space-around;
+}
+
+.priceContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid rgb(54, 33, 168);
+    margin: 1em 0;
+}
